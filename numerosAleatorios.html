@@ -4,7 +4,6 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-
 	<!--font awesome para tener icons sin hacerlos :) -->
 	<script src="https://kit.fontawesome.com/a3bcf817ec.js" crossorigin="anonymous"></script>
 
@@ -41,41 +40,31 @@
 
 	<!--**********Main-Programa**********-->
 	<main class="programa contenedor">
+		<form class="programa__form">
 
-		<section class="programa__Context">
+			<h2 class="programa__form-h2">
+				Generador de Numero Aleatorios
+			</h2>
+
+			<div class="campo">
+				<label class="campo-label" for="min">Numero Minimo :</label>
+				<input class="campo-form-input" type="text" id="min" value="10" />
+			</div>
 			
-			<div class="programa__Context-text">
-
-				<h2 class="programa__Context-text-h2">
-					Numeros Aleatorios!!!
-				</h2>
-				<p class="programa__Context-text-p">
-					Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</p>
+			<div class="campo">
+				<label class="campo-label" for="max">Numero Maximo :</label>
+				<input class="campo-form-input" type="text" id="max" value="20" />
 			</div>
 
-			<div class="programa__Context-icono">
-				<i class="fas fa-sort-numeric-up-alt"></i>
+			<div class="campo right">
+				<button type="button" id="Dale" class="boton">Dale</button>
 			</div>
-		</section>
+		</form>
 
 
-		<section class="programa__Context">
-			<div class="programa__Context-icono">
-				<i class="fas fa-clock"></i>
-			</div>
-			<div class="programa__Context-text">
-				<h2 class="programa__Context-text-h2">
-					Temporizador
-				</h2>
-				<p class="programa__Context-text-p">
-					Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur.
-				</p>
-			</div>
-		</section>
+		<div class="numero" id="numero">
+			
+		</div>
 	</main>
 	
 
@@ -87,5 +76,6 @@
 		
 	</footer>
 
+	<script type="text/javascript" src="funciones/numerosAleatorios.js"></script>
 </body>
 </html>
